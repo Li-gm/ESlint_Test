@@ -21,11 +21,14 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    // error：打开规则  off:关闭规则
     // allow async-await
     'generator-star-spacing': 'off',
     'semi': 'off',
     // allow debugger during development
     'no-debugger':process.env.NODE_ENV==='production'?'error':'off',
-    "no-alert": 0,
+    "no-alert": 'error',
+    "no-console": "off",
+    "no-empty": "error"
   }
 }

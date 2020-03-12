@@ -12,6 +12,8 @@ import Highcharts3D from 'highcharts/highcharts-3d';
 import cytoscape from 'cytoscape';
 import cola from 'cytoscape-cola';
 import echarts from 'echarts'
+import VueFormGenerator from 'vue-form-generator';
+import 'vue-form-generator/dist/vfg.css';
 
 Vue.prototype.$echarts = echarts
 HighchartsMore(Highcharts)
@@ -19,9 +21,7 @@ HighchartsDrilldown(Highcharts);
 Highcharts3D(Highcharts);
 require('highcharts/modules/map')(Highcharts);
 require('vue-tour/dist/vue-tour.css');
-cytoscape.use( cola );
-import VueFormGenerator from "vue-form-generator";
-import "vue-form-generator/dist/vfg.css";
+cytoscape.use(cola);
 
 Vue.use(VueTour);
 Vue.use(VueFormGenerator);
